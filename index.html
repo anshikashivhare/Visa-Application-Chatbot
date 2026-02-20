@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Visa Application Guide</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <img src="assets/logo.svg" alt="Logo" class="logo"/>
+        <div>
+          <h1>Visa Application Guide</h1>
+          <p class="tag">Practical steps, documents checklist, timeline & tips</p>
+        </div>
+      </div>
+      <div class="header-actions">
+        <button id="theme-toggle" aria-label="Toggle dark mode" class="theme-toggle">🌙</button>
+      </div>
+      <nav class="top-nav" aria-label="Main navigation">
+        <a href="#overview">Overview</a>
+        <a href="#documents">Documents</a>
+        <a href="#steps">How to Apply</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <section id="overview">
+      <h2>Overview</h2>
+      <p>This guide helps you prepare and submit a visa application. Use the chatbot (bottom-right) to ask quick questions.</p>
+    </section>
+
+    <section id="eligibility">
+      <h2>Eligibility</h2>
+      <ul>
+        <li>Check the visa category requirements for your purpose (tourism, work, study).</li>
+        <li>Nationality, travel history, financial sufficiency and health checks may apply.</li>
+      </ul>
+    </section>
+
+    <section id="documents">
+      <h2>Required Documents</h2>
+      <ol>
+        <li>Valid passport (min 6 months validity)</li>
+        <li>Passport photos meeting specifications</li>
+        <li>Completed application form</li>
+        <li>Proof of funds / bank statements</li>
+        <li>Invitation letter / acceptance / job offer (if applicable)</li>
+        <li>Travel itinerary and accommodation</li>
+      </ol>
+    </section>
+
+    <section id="steps">
+      <h2>Step-by-step Application</h2>
+      <ol>
+        <li>Gather documents listed above.</li>
+        <li>Fill out the official online form or paper form.</li>
+        <li>Book appointment (if required) and pay fees.</li>
+        <li>Attend biometrics/interview (if required).</li>
+        <li>Wait for decision and collect passport.</li>
+      </ol>
+    </section>
+
+    <section id="timeline">
+      <h2>Timeline</h2>
+      <p>Processing varies by country and visa type — typically 2 weeks to 3 months.</p>
+    </section>
+
+    <section id="tips">
+      <h2>Tips</h2>
+      <ul>
+        <li>Apply early and be honest in forms.</li>
+        <li>Prepare certified translations for non-English documents.</li>
+        <li>Keep digital copies of everything.</li>
+      </ul>
+    </section>
+
+    <section id="faq">
+      <h2>FAQ</h2>
+      <div class="accordion" id="faq-accordion">
+        <div class="acc-item">
+          <button class="acc-toggle">Can I track my application?<span class="acc-icon">▸</span></button>
+          <div class="acc-panel">Yes — use the tracking portal provided by the visa authority.</div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-toggle">What if my passport expires soon?<span class="acc-icon">▸</span></button>
+          <div class="acc-panel">Renew your passport before applying to avoid delays.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Chatbot widget -->
+  <div id="chat-widget" class="chat-closed" aria-hidden="false">
+    <button id="chat-toggle" class="chat-toggle">Chat</button>
+    <div class="chat-panel" role="dialog" aria-label="Visa chatbot">
+      <header class="chat-header">
+        <strong>Visa Assistant</strong>
+        <button id="chat-close" aria-label="Close">✕</button>
+      </header>
+      <div id="chat-messages" class="chat-messages"></div>
+      <form id="chat-form" class="chat-form">
+          <input id="chat-input" type="text" placeholder="Ask about documents, timeline, fees..." autocomplete="off" />
+          <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
